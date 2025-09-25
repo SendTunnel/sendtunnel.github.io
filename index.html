@@ -6,15 +6,15 @@
     <title>SendTunnel | Private device-to-device file sharing</title>
     <meta
       name="description"
-      content="Private device-to-device file sharing—direct first, secure tunnel when needed. Native iOS & Android with a shared Rust core."
+      content="Private iOS device-to-device file sharing—direct first, secure tunnel when needed."
     />
     <meta
       property="og:title"
-      content="SendTunnel — Private device-to-device file sharing"
+      content="SendTunnel — Private device-to-device file sharing for iOS"
     />
     <meta
       property="og:description"
-      content="Direct P2P when possible; encrypted relay if required. Native SwiftUI & Jetpack Compose, powered by Rust + Iroh."
+      content="Direct P2P when possible; encrypted relay if required."
     />
     <meta property="og:type" content="website" />
     <meta
@@ -314,7 +314,6 @@
       <div class="container">
         <nav>
           <div class="brand">
-            <!-- Simple tunnel glyph -->
             <svg
               class="logo"
               viewBox="0 0 64 64"
@@ -364,21 +363,21 @@
           <span class="grad-text">fast, native, secure</span>.
         </h1>
         <p class="lead fade-up">
-          Send files directly between phones and laptops. When networks block
-          P2P, SendTunnel opens a secure, encrypted tunnel so your transfer
-          still succeeds. Built as a native iOS & Android experience, powered by
-          a shared Rust core.
+          Send files directly between iPhones. When networks block P2P,
+          SendTunnel opens a secure, encrypted tunnel so your transfer still
+          succeeds.
         </p>
         <div class="cta fade-up">
           <a class="btn primary" href="#" target="_blank" rel="noopener"
             >Join iOS TestFlight</a
           >
-          <a class="btn" href="#" target="_blank" rel="noopener"
-            >Join Android Beta</a
+          <a
+            class="btn ghost"
+            href="https://github.com/SendTunnel"
+            target="_blank"
+            rel="noopener"
+            >View on GitHub</a
           >
-          <a class="btn ghost" href="https://github.com/SendTunnel" target="_blank" rel="noopener"
-          >View on GitHub</a
-                         >
         </div>
 
         <div id="tech" class="stack fade-up" aria-label="Tech stack">
@@ -398,7 +397,6 @@
           </span>
           <span class="badge" title="Iroh / QUIC">🔗 QUIC (with Iroh)</span>
           <span class="badge" title="SwiftUI"> SwiftUI</span>
-          <span class="badge" title="Jetpack Compose">🤖 Compose</span>
         </div>
       </section>
 
@@ -428,8 +426,8 @@
           <div class="feature glass fade-up">
             <h3>Native UX</h3>
             <p>
-              iOS & Android native UIs. System pickers, share sheets, haptics,
-              and dark mode.
+              iOS native UI. System pickers, share sheets, haptics, and dark
+              mode.
             </p>
           </div>
           <div class="feature glass fade-up">
@@ -443,7 +441,7 @@
             <h3>Open core</h3>
             <p>
               Shared Rust engine with clean APIs. Designed to extend to desktop
-              and web when you need it.
+              (and maybe Android!) when you need it.
             </p>
           </div>
         </div>
@@ -455,7 +453,7 @@
       >
         <h2 class="section-title">The tech inside</h2>
         <p class="subtle">
-          A shared Rust engine powers native apps. We try <em>Direct</em> QUIC
+          A shared Rust engine powers the iOS app. We try <em>Direct</em> QUIC
           first; if the network blocks it, we switch to an encrypted
           <em>Tunnel</em>.
         </p>
@@ -470,9 +468,7 @@
             fill="none"
             stroke="var(--outline)"
           />
-          <text x="40" y="110" fill="var(--text)" font-size="16">
-            iOS · SwiftUI
-          </text>
+          <text x="40" y="110" fill="var(--text)" font-size="16">iOS</text>
           <rect
             x="45"
             y="120"
@@ -505,9 +501,7 @@
             fill="none"
             stroke="var(--outline)"
           />
-          <text x="880" y="110" fill="var(--text)" font-size="16">
-            Android · Compose
-          </text>
+          <text x="880" y="110" fill="var(--text)" font-size="16">iOS</text>
           <rect
             x="885"
             y="120"
@@ -599,9 +593,7 @@
             iOS —> Home / Send · Receive
           </div>
           <div class="glass placeholder fade-up">iOS —> Ticket &amp; QR</div>
-          <div class="glass placeholder fade-up">
-            Android —> Transfer Progress
-          </div>
+          <div class="glass placeholder fade-up">iOS —> Transfer Progress</div>
         </div>
       </section>
 
@@ -615,9 +607,6 @@
         <div class="cta">
           <a class="btn primary" href="#" target="_blank" rel="noopener"
             >in iOS TestFlight soon</a
-          >
-          <a class="btn" href="#" target="_blank" rel="noopener"
-            >in Android Beta channel soon</a
           >
           <a class="btn ghost" href="mailto:contact@sendtunnel.app">Contact</a>
         </div>
@@ -634,9 +623,12 @@
         "
       >
         <span>© <span id="y"></span> SendTunnel</span>
-        <span class="subtle">Built with love in Sète  by
-            <a href="https://wassimans.com" target="_blank" rel="noopener"
-            >Wassim Mansouri</a></span>
+        <span class="subtle"
+          >Built with love in Sète by
+          <a href="https://wassimans.com" target="_blank" rel="noopener"
+            >Wassim Mansouri</a
+          ></span
+        >
       </div>
     </footer>
 
